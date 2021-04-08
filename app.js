@@ -9,11 +9,11 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
-mongoose.connect("mongodb+srv://vinnie:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://vinniiee:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
+mongodb+srv://vinniiee:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB?retryWrites=true&w=majority
 const postsSchema = ({
   "title": {
     type: String,
