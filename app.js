@@ -9,7 +9,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
-mongoose.connect("mongodb+srv://vinnie:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB", {
+mongoose.connect("mongodb://localhost:27017/blogDB", {
   useNewUrlParser: true
 });
 
@@ -207,7 +207,7 @@ app.post("/update",function(req,res){
 
 });
 
-app.listen(3000 || process.env.PORT, function() {
+app.listen(3000 || process.env.PO, function() {
 
   console.log("Listening at port 3000...")
 
