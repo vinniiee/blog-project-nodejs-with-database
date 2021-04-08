@@ -9,7 +9,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
-mongoose.connect("mongodb+srv://vinnie:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB", {
+mongoose.connect("mongodb+srv://vinnie:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -135,7 +135,7 @@ app.get("/posts/:postName", function(req, res) {
 
           }
           else{
-            
+
           }
       });
 
