@@ -134,6 +134,9 @@ app.get("/posts/:postName", function(req, res) {
 
 
           }
+          else{
+            
+          }
       });
 
   });
