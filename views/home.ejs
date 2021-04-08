@@ -1,12 +1,12 @@
 <%- include("partials/header") -%>
 
 <h1>Home</h1>
-<p><%=  start %></p> <br>
+
 
 <% postList.forEach(function(post){ %>
-
-  <h1><%= post.title %></h1>
-  <p ><%= post.content.substring(0,100) %>...<a href="/posts/<%= post.title %>">Read more</a></p> 
+  <% console.log(post.content) %>
+  <h2><%= post.title %></h2>
+  <p ><%= post.content.substring(0,100) %>...<a href="/posts/<%= post.title %>">Read more</a></p>
 
 <% }); %>
 
