@@ -207,7 +207,7 @@ app.post("/update",function(req,res){
 
 });
 
-app.listen(3000, function() {
+app.listen(3000 || process.env.PORT, function() {
 
   console.log("Listening at port 3000...")
 
