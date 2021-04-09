@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
@@ -9,7 +10,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 const app = express();
 
-mongoose.connect("mongodb+srv://vinniiee:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGO_ATLAS_LINK, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
