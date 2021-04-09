@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_ATLAS_LINK, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-mongodb+srv://vinniiee:qwertyuiop@cluster0.6usfn.mongodb.net/blogDB?retryWrites=true&w=majority
+
 const postsSchema = ({
   "title": {
     type: String,
